@@ -1,0 +1,14 @@
+<?php
+    $servername="localhost";
+    $username="root";
+    $password="";
+    $database="db_siswa";
+    $koneksi=mysql_connect ($servername, $username, $password);
+
+  if ($koneksi) {
+    mysql_select_db ($database) or die ("Database Tidak Ditemukan");
+     echo "<b> Berhasil melakukan Koneksi Ke DataBase </b>";
+   } else {
+     echo "<b> Gagal Melakukan Koneksi Ke Database </b>";
+   }
+?>
